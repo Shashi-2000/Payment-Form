@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+     <!-- <link href="style.css" rel="stylesheet"> -->
+     <title>Payment form</title>
+     <link rel="stylesheet" href="Payment-file.css">
+ </head>
+ <body>
+     <div id="full-box">
+         <h1 >Payment Form</h1>
+
+         <hr>
+
+         <h2>User Information:</h2>
+
+        <p>Full Name: *&nbsp;
+            <input class="full-name" required type="text" Name="full name" placeholder="Name Surname">
+        </p>
+
+        <p>Gmail: &nbsp;
+            <input class="gmail" type="gmail" Name="gmail" placeholder="qwerty@gmail.com">
+        </p>
+
+        <label>
+             <p>Contact Number: &nbsp;<input id="contact-number" type="text" placeholder="12345 67890" Name="Mobile Number" maxlength="10" ></p>
+        </label>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <p class="gender">Male
+                <input type="radio" id="Male" Name="Gender" value="Gender">
+                &nbsp;
+                Female
+                <input type="radio" id="" Name="Gender" value="Gender">
+                &nbsp;
+                Others
+                <input type="radio" id="" Name="Gender" value="Gender">
+            </p>
+        </fieldset>
+
+        <p>Address: <textarea class="address" Name="Adddress" placeholder="Enter Adress" cols="100" rows="5"></textarea></p>
+
+        <p>Pincode: &nbsp;<input class="pincode" type="pincode" Name="Pincode" placeholder="123456"></p>
+
+        <p>
+             <form>
+                 <input type="checkbox" Name="Acceptance/Agree" > 
+                 <em id="accept">I accept terms and conditons</em>
+             </form>
+        </p>
+
+        <p> 
+             <form>
+                 <input  id="validate" type="submit" value="Validate">
+             </form>
+        </p>
+
+        <hr>
+
+        <h2>Payment details:</h2>
+        <P>Card type: 
+            <select id="card-type">
+                 <option>--Select type--</option>
+                 <option>Rupay</option>
+                 <option>Visa</option>
+                 <option>Master</option>
+                 <option>platinum</option>
+            </select>
+        </P>
+        <label>
+             <p>Card holder name: 
+                 <input type="text" id="card-holder-name" Name="Card Holder Name" placeholder="name">
+             </p>
+             <p>Card Number:
+                <input  id="card-number" type="tel" Name="Card_Number" maxlength="16" placeholder="1111 2222 3333 4444" onkeyup="if(this.value.length > 34){this.value=this.value.substr(0, 34);}">
+             </p>
+             <p>valid: <input type="month" max="2040" Name="Valid Through"></p>
+             <p>CVV: <input  class="cvv" type="text" placeholder="123" Name="cvv" maxlength="3"></p>
+        </label>
+        <form>
+            <p>
+                 <em id="save">Save & Secure My Card</em> 
+                 <input type="checkbox" Name="Save">
+            </p>
+            <p> <input id="paybutton" type="submit" value="Pay" Name="pay" action="/action.php"></p>
+        </form>
+     </div>
+ </body>
+</html>

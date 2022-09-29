@@ -1,0 +1,100 @@
+
+#full-box {
+    background-color: rgba(227, 224, 224, 0.47);
+    width: 950px;
+    padding: 15px;
+    margin: 40px 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+.full-name, .gmail {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 915px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#contact-number, .pincode {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 120px;
+    height: 20px;
+    padding: 5px;
+}
+.gender{
+    width: 900px;
+}
+
+.address {
+    width: 940px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#accept, #save {
+    font-family: italic;
+}
+
+#validate{
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color:  #005ce6;
+}
+
+#validate:hover{
+    background-color:  #002966;
+    box-shadow: 10px, 10px, 10px grey;
+    cursor: pointer;
+}
+#card-type, input[type=month]{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 140px;
+    height: 30px;
+}
+ 
+#card-number {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 160px;
+    height: 30px;
+}
+
+#card-holder-name {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 250px;
+    height: 28px;
+}
+
+.cvv {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 60px;
+    height:28px;
+}
+
+#paybutton {
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color:  #38e95e;
+}
+
+#paybutton:hover {
+    background-color:  #00851dbd;
+    box-shadow: 10px, 10px, 10px grey;
+    cursor: pointer;
+}
